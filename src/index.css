@@ -68,6 +68,10 @@ code {
     font-size: 26px;
   }
 
+  .AboutPage button {
+    font-size: 30px;
+  }
+
   .Avatar {
     width: 200px;
     margin-bottom: 75px;
@@ -121,7 +125,7 @@ code {
   }
 
   .SkillsHeading {
-    font-size: 26px;
+    font-size: 40px;
   }
   .SkillBox {
     width: 100px;
@@ -329,18 +333,23 @@ button:hover {
   .HomePage {
     display: block;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 75px;
     padding: 25px;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .HomeText {
-    text-align: left;
+    text-align: center;
     display: inline-block;
   }
 }
 
 @media (max-width: 500px) {
   .HomePage {
+    margin-top: 50px;
     min-height: 70vh;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .NavbarLinks {
     inset: 0 0 0 30%;
@@ -352,6 +361,10 @@ button:hover {
   .TypeEffect {
     font-weight: 500;
     font-size: 40px;
+  }
+  .Avatar {
+    height: 400px;
+    width: 400px;
   }
 }
 
@@ -450,4 +463,50 @@ a {
   display: block;
   width: 100%;
   margin: 0px 0px;
+}
+
+footer {
+  width: 90%;
+  height: 40px;
+  margin: 10px auto;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  color: white;
+}
+
+footer h4 {
+  margin: 0 25px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footerLinks {
+  display: flex;
+  width: 180px;
+  font-size: 40px;
+  justify-content: space-evenly;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: inherit;
+}
+.footerLinks a:hover {
+  scale: 1.5;
+  color: var(--color);
+  transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 750px) {
+  footer {
+    height: 110px;
+  }
 }

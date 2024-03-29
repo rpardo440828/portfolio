@@ -6,6 +6,7 @@ import MoveToTop from "./components/MoveToTop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Footer from "./components/Footer";
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
       <Navbar />
       <MoveToTop />
       <Outlet />
+      <Footer />
     </>
   );
 };
