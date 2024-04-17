@@ -1,7 +1,7 @@
 import React from "react";
 // import Skills from "./Skills.jsx";
 import { FaFileDownload } from "react-icons/fa";
-import Resume from "../constants/Resume.pdf";
+import Resume from "../constants/Résumé.pdf";
 import Skills from "../components/Skills";
 
 const About = () => {
@@ -26,7 +26,7 @@ const About = () => {
             footer.
             <br />
           </p>
-          <a href={Resume} download="Resume.pdf" className="resume-btn">
+          <a href={Resume} download="Résumé.pdf" className="resume-btn">
             <button>
               Download Resume <FaFileDownload></FaFileDownload>
             </button>
